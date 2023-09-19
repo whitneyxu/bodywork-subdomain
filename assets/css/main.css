@@ -3338,7 +3338,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		/*background-color: #ffffff;*/
 		color: #636363;
 		border-radius: 0.25em;
 	}
@@ -3686,7 +3686,7 @@ input, select, textarea {
 /* main-image */
 
 	#main-image {
-		/* background-color: #ffffff; */
+		
 		color: #636363;
 		border-radius: 0.25em;
 		text-align: center;
@@ -4149,7 +4149,7 @@ ul.myUL {
   text-align: left;
 }
 
-.flowerstyle {
+.flower{
 	width: 380;
 	text-align: center;
 
