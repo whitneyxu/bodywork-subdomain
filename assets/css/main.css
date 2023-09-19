@@ -2414,6 +2414,10 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.flower {
+			width: 380;
+		}
+
 /* List */
 
 	ol {
@@ -3952,6 +3956,7 @@ input, select, textarea {
 					border-top-left-radius: 0.25em;
 					border-bottom-right-radius: 0;
 					border-bottom-left-radius: 0;
+
 				}
 
 		@media screen and (max-width: 1280px) {
@@ -4142,4 +4147,10 @@ input, select, textarea {
 ul.myUL {
   display: inline-block;
   text-align: left;
+}
+
+.flowerstyle {
+	width: 380;
+	text-align: center;
+
 }
