@@ -9,8 +9,23 @@
 		<title>gentle tiger bodywork</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1" />
+		<script src="../../js/ios-orientationchange-fix.min.js"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+	
+		img[usemap] {
+			border: none;
+			height: auto;
+			max-width: 100%;
+			width: auto;
+		}
+		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -24,7 +39,7 @@
 						<p>donation-based bodywork by Whitney</p>
 
 						<section style="text-align: center;">
-								<img src="images/flower-1000.png" usemap="#s" width="350px" class="center">
+								<img src="images/flower-1000.png" usemap="#s" class="center">
 
 								<map name="s">
 									<area shape="circle" coords="507,486,133" href="book.html">
@@ -115,6 +130,18 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script src="jquery.rwdImageMaps.min.js"></script>
+			<script>
+			$(document).ready(function(e) {
+				$('img[usemap]').rwdImageMaps();
+				
+				$('area').on('click', function() {
+					alert($(this).attr('alt') + ' clicked');
+				});
+			});
+			</script>
 
 	</body>
 </html>
