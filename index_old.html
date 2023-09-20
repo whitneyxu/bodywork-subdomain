@@ -9,25 +9,8 @@
 		<title>gentle tiger bodywork</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-		<!-- RESPONSIVE MAP RESCALING -->
-		<meta name="HandheldFriendly" content="True" />
-		<meta name="MobileOptimized" content="320" />
-		<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1" />
-		<script src="../../js/ios-orientationchange-fix.min.js"></script>
-		<style>
-		img[usemap] {
-			border: none;
-			height: auto;
-			max-width: 100%;
-			width: auto;
-		}
-		</style>
-		<!-- RESPONSIVE MAP RESCALING END -->
-
 	</head>
 	<body class="is-preload">
 
@@ -39,14 +22,6 @@
 						<span class="logo"><img src="images/gentle-tiger-logo-500.png" width=312px alt="" /></span>
 						<!--<h1>Stellar</h1>-->
 						<p>donation-based bodywork by Whitney</p>
-
-						<section style="text-align: center;">
-								<img src="images/flower-1000.png" usemap="#s" class="center">
-
-								<map name="s">
-									<area shape="circle" coords="507,486,133" href="book.html">
-								</map>
-							</section>
 					</header>
 
 				<!-- Nav -->
@@ -60,11 +35,19 @@
 					</nav> -->
 
 				<!-- Main -->
-					<div>
+					<div id="main">
 
 
+						<section id="content" class="main">
+							<span class="image main">
+								<img src="images/flower-1000.png" usemap="#s">
+
+								<map name="s">
+									<area shape="circle" coords="507,486,133" href="book.html">
+								</map>
+							</span>
 							
-							
+						</section>
 						<!-- Introduction -->
 							<!-- <section id="intro" class="main">
 								<center><div class="spotlight">
@@ -132,16 +115,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-			<!-- RESPONSIVE MAP RESCALING -->
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-			<script src="jquery.rwdImageMaps.min.js"></script>
-			<script>
-			$(document).ready(function(e) {
-			    $('img[usemap]').rwdImageMaps();
-			});
-			</script>
-			<!-- RESPONSIVE MAP RESCALING END -->
 
 	</body>
 </html>
