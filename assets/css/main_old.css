@@ -3338,8 +3338,8 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #40235C;
-		color: #FFFFF;
+		background-color: #ffffff;
+		color: #636363;
 		border-radius: 0.25em;
 	}
 
@@ -3352,11 +3352,11 @@ input, select, textarea {
 		}
 
 		#main strong, #main b {
-			color: #BEE5FA;
+			color: #636363;
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #FFFFFF;
+			color: #636363;
 		}
 
 		#main blockquote {
