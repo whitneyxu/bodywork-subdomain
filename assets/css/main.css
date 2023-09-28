@@ -3561,7 +3561,7 @@ input, select, textarea {
 		}
 
 			#main table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(222, 222, 222, 0.25);
+				background-color: rgba(222, 222, 222, 0.08);
 			}
 
 		#main table th {
@@ -3569,7 +3569,7 @@ input, select, textarea {
 		}
 
 		#main table thead {
-			border-bottom-color: #dddddd;
+			/*border-bottom-color: #dddddd;*/
 		}
 
 		#main table tfoot {
