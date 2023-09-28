@@ -6,11 +6,26 @@
 -->
 <html>
 	<head>
-		<title>contact me</title>
+		<title>contact me - Gentle Tiger Bodywork</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- RESPONSIVE MAP RESCALING -->
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1" />
+		<script src="../../js/ios-orientationchange-fix.min.js"></script>
+		<style>
+		img[usemap] {
+			border: none;
+			height: auto;
+			max-width: 100%;
+			width: auto;
+		}
+		</style>
+		<!-- RESPONSIVE MAP RESCALING END -->
 	</head>
 	<body class="is-preload">
 
@@ -20,15 +35,10 @@
 				<!-- Header -->
 
 				<!-- Main -->
-					<div id="main">
+					<div>
 
 						<!-- Content -->
-							
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
+						<section >
 							<h2>Contact me</h2>
 							<dl class="alt">
 								<dt>Text</dt>
@@ -51,6 +61,30 @@
 							</ul>-->
 						</section>
 						</section>
+
+
+						<div>
+							<p></br></p>
+							<section style="text-align: center; ">
+								<img src="images/flower-1000.png" usemap="#s" class="center">
+
+								<map name="s">
+									<area shape="circle" coords="507,486,133" href="book.html">
+									<area shape="circle" coords="512,185,70" href="about-me.html">
+									<area shape="circle" coords="773,315,70" href="helpful-resources.html">
+									<area shape="circle" coords="771,628,70" href="reviews.html">
+									<area shape="circle" coords="514,768,70" href="my-playlists.html">
+									<area shape="circle" coords="255,622,70" href="contact-me.html">
+									<area shape="circle" coords="257,326,70" href="FAQ.html">
+								</map>
+							</section>
+						</div>
+							
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
 						<p class="copyright">bodywork • whitney xu </p>
 					</footer>
 
@@ -64,6 +98,16 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- RESPONSIVE MAP RESCALING -->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script src="jquery.rwdImageMaps.min.js"></script>
+			<script>
+			$(document).ready(function(e) {
+			    $('img[usemap]').rwdImageMaps();
+			});
+			</script>
+			<!-- RESPONSIVE MAP RESCALING END -->
 
 	</body>
 </html>
