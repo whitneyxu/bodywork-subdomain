@@ -1882,7 +1882,7 @@ input, select, textarea {
 		input[type="button"].small,
 		button.small,
 		.button.small {
-			font-size: 0.8em;
+			font-size: 0.93em;
 		}
 
 		input[type="submit"].large,
@@ -3383,7 +3383,7 @@ input, select, textarea {
 		#main .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px #dddddd;
-			color: #636363 !important;
+			color: #cbcbcb !important;
 		}
 
 			#main input[type="submit"]:hover,
