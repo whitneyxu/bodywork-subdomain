@@ -4160,8 +4160,6 @@ ul.myUL {
   margin-left: auto;
   margin-right: auto;
 }
-
-
 .dropdown {
   margin: 20px;
 }
@@ -4189,6 +4187,8 @@ ul.myUL {
   border: 1px solid #ddd;
   border-top: none;
   white-space: normal; /* Allow text to wrap */
+  word-break: break-word; /* Ensure words break to fit the container */
+  overflow-wrap: break-word; /* Ensure words break to fit the container */
 }
 
 .dropdown-content p {
