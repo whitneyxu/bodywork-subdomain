@@ -4162,7 +4162,6 @@ ul.myUL {
 }
 
 
-
 .dropdown {
   margin: 20px;
 }
@@ -4189,8 +4188,16 @@ ul.myUL {
   padding: 10px;
   border: 1px solid #ddd;
   border-top: none;
+  white-space: normal; /* Allow text to wrap */
 }
 
 .dropdown-content p {
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  .dropdown-content {
+    padding: 5px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Reduce font size for better fit */
+  }
 }
