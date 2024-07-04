@@ -3418,6 +3418,7 @@ input, select, textarea {
 				background-color: #edf3c7;
 				color: #000000 !important;
 				box-shadow: none;
+				font-weight: 500;
 			}
 
 				#main input[type="submit"].primary:hover,
@@ -4255,7 +4256,7 @@ button{
   background-color: #007cbe;
   border: none;
   color: white;
-  padding: 2px 15px;
+  padding: 0px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
