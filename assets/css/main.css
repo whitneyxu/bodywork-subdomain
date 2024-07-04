@@ -4160,9 +4160,6 @@ ul.myUL {
   margin-left: auto;
   margin-right: auto;
 }
-.dropdown {
-  margin: 20px;
-}
 
 
 .dropdown {
@@ -4176,13 +4173,14 @@ ul.myUL {
   padding: 0px;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: calc(100% - 20px); /* Adjust width to leave space for margin */
   text-align: left;
   font-size: 16px;
   transition: background-color 0.3s ease;
   padding-left: 15px;
   word-wrap: break-word; /* Enable word wrap */
   white-space: normal; /* Allow text to wrap */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .dropdown-header:hover {
@@ -4207,6 +4205,8 @@ ul.myUL {
     font-size: 14px; /* Adjust font size for mobile */
     word-wrap: break-word; /* Ensure word wrap */
     white-space: normal; /* Allow text to wrap */
+    width: calc(100% - 20px); /* Adjust width to leave space for margin */
+    margin-right: 10px; /* Add right margin */
   }
 
   .dropdown-content {
