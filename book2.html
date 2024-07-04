@@ -53,6 +53,80 @@
 						<!-- Content -->
 							<section id="content" class="main">
 
+
+								<h3>Default</h3>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												
+												<th>Description</th>
+												
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												
+												<td><p>60 minutes sliding scale<br>~ $70 - $120</p>
+
+													<span class="dots"></span>
+
+													<span class="more">
+													  <p>Whether this is your first time getting bodywork or you are a seasoned bodywork receiver, the 60 minute sliding scale session is a great way to get comprehensive work done in a short amount of time. The format of this massage is a Swedish full-body massage (light - medium pressure to warm the tissue and get circulation going) on the major body parts, combined with deeper pressure or deep tissue work in one area of the body that requires more attention. For example, many people opt to have work done on their neck or upper back, but it’s completely up to you. I would especially recommend this option to anyone who is just trying out bodywork and unsure of committing to a longer massage. 60 minutes is a great length to feel the full-body benefits of massage, whereas the 30 minute option is more for a specific body part that needs work.<br><br>
+													  This massage is sliding scale with a recommended payment of $70 - $130 per session. <br><br>
+													  Bookings can be made up to 24 hours in advance and I will collect payment after the session.</p>
+													  
+													</span>
+
+													<button class="read">⏷ I'm curious, please expand!</button>
+
+
+												</td>
+												
+											</tr>
+											<tr>
+												
+												<td><p>60 minutes sliding scale<br>~ $70 - $120</p>
+
+													<span class="dots"></span>
+
+													<span class="more">
+													  <p>Whether this is your first time getting bodywork or you are a seasoned bodywork receiver, the 60 minute sliding scale session is a great way to get comprehensive work done in a short amount of time. The format of this massage is a Swedish full-body massage (light - medium pressure to warm the tissue and get circulation going) on the major body parts, combined with deeper pressure or deep tissue work in one area of the body that requires more attention. For example, many people opt to have work done on their neck or upper back, but it’s completely up to you. I would especially recommend this option to anyone who is just trying out bodywork and unsure of committing to a longer massage. 60 minutes is a great length to feel the full-body benefits of massage, whereas the 30 minute option is more for a specific body part that needs work.<br><br>
+													  This massage is sliding scale with a recommended payment of $70 - $130 per session. <br><br>
+													  Bookings can be made up to 24 hours in advance and I will collect payment after the session.</p>
+													  
+													</span>
+
+													<button class="read">⏷ I'm curious, please expand!</button>
+
+
+												</td>
+												
+											</tr>
+											<tr>
+												
+												<td><p>60 minutes sliding scale<br>~ $70 - $120</p>
+
+													<span class="dots"></span>
+
+													<span class="more">
+													  <p>Whether this is your first time getting bodywork or you are a seasoned bodywork receiver, the 60 minute sliding scale session is a great way to get comprehensive work done in a short amount of time. The format of this massage is a Swedish full-body massage (light - medium pressure to warm the tissue and get circulation going) on the major body parts, combined with deeper pressure or deep tissue work in one area of the body that requires more attention. For example, many people opt to have work done on their neck or upper back, but it’s completely up to you. I would especially recommend this option to anyone who is just trying out bodywork and unsure of committing to a longer massage. 60 minutes is a great length to feel the full-body benefits of massage, whereas the 30 minute option is more for a specific body part that needs work.<br><br>
+													  This massage is sliding scale with a recommended payment of $70 - $130 per session. <br><br>
+													  Bookings can be made up to 24 hours in advance and I will collect payment after the session.</p>
+													  
+													</span>
+
+													<button class="read">⏷ I'm curious, please expand!</button>
+
+
+												</td>
+												
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+
 								<h2>sliding scale</h2>
 								<div class="dropdown">
 								    <button class="dropdown-header">60 minutes sliding scale ~ $70 - $120 balkj blakj lkj lkjlkjlkj lkjll lkjlll lkjlkj lk lkjlkjlkjl l ljk lkj liding scale ~ $70 - $120 balkj blakj lkj lkjlkjlkj lkjll lkjlll lkjlkliding scale ~ $70 - $120 balkj blakj lkj lkjlkjlkj lkjll lkjlll lkjlk</button>
@@ -225,6 +299,39 @@
 
 			<!-- RESPONSIVE MAP RESCALING END -->
 			<script src="assets/js/dropdown.js"></script>
+
+
+			<!-- FOR EXPAND BUTTON -->
+			<script>
+			$(document).ready(function(){
+			   $(".read").click(function(){
+			      $(this).prev().toggle();
+			      $(this).siblings('.dots').toggle();
+			      if($(this).text()=='⏶ show less'){
+			  $(this).text('⏷ show more');
+			      }
+			      else{
+			  $(this).text('⏶ show less');
+			      }
+			   });
+			});
+
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var content = this.nextElementSibling;
+			    if (content.style.display === "block") {
+			      content.style.display = "none";
+			    } else {
+			      content.style.display = "block";
+			    }
+			  });
+			}
+			</script>
+			<!-- END EXPAND BUTTON -->
 
 
 	</body>
