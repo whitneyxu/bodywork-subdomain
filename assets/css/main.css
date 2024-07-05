@@ -8,7 +8,7 @@
 */
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote, blockquotetwo,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -42,6 +42,15 @@ blockquote, q {
 }
 
 	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+blockquotetwo, q {
+	quotes: none;
+}
+
+	blockquotetwo:before, blockquotetwo:after, q:before, q:after {
 		content: '';
 		content: none;
 	}
@@ -257,6 +266,12 @@ input, select, textarea {
 		padding: 0.5em 0 0.5em 2em;
 	}
 
+	blockquotetwo {
+		border-left: solid 4px;
+		margin: 0 0 2em 0;
+		padding: 0.5em 0 0.5em 2em;
+	}
+
 	code {
 		border-radius: 8px;
 		border: solid 1px;
@@ -319,6 +334,10 @@ input, select, textarea {
 	}
 
 	blockquote {
+		border-left-color: rgba(255, 255, 255, 0.35);
+	}
+
+	blockquotetwo {
 		border-left-color: rgba(255, 255, 255, 0.35);
 	}
 
@@ -3252,6 +3271,10 @@ input, select, textarea {
 			border-left-color: #dddddd;
 		}
 
+		#nav blockquotetwo {
+			border-left-color: #dddddd;
+		}
+
 		#nav code {
 			background: rgba(222, 222, 222, 0.25);
 			border-color: #dddddd;
@@ -3361,6 +3384,10 @@ input, select, textarea {
 
 		#main blockquote {
 			border-left-color: #dddddd;
+		}
+
+		#main blockquotetwo {
+			border-left-color: #ec9766;
 		}
 
 		#main code {
@@ -3710,6 +3737,10 @@ input, select, textarea {
 		}
 
 		#main-image blockquote {
+			border-left-color: #dddddd;
+		}
+
+		#main-image blockquotetwo {
 			border-left-color: #dddddd;
 		}
 
