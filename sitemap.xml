@@ -1,127 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://bodywork.whitneyx.info/</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/about-me.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/helpful-resources.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/reviews.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/my-playlists.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/contact-me.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/FAQ.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/index.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book-workshop-basics.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book-reiki-60.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book-reiki-90.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book-sliding-60.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book-sliding-90.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book-sliding-120.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book-quick-fix-30.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book-armshands-60.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book-hipsglutes-60.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book-faceheadjaw-60.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book-cupping-60.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book-cupping-90.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book-dayof-60.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bodywork.whitneyx.info/book-dayof-90.html</loc>
-  <lastmod>2025-01-03T21:43:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://bodywork.whitneyx.info/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/about-me.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/helpful-resources.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/reviews.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/my-playlists.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/contact-me.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/FAQ.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book-workshop-basics.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book-reiki-60.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book-reiki-90.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book-sliding-60.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book-sliding-90.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book-sliding-120.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book-quick-fix-30.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book-armshands-60.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book-hipsglutes-60.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book-faceheadjaw-60.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book-cupping-60.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book-cupping-90.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book-dayof-60.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://bodywork.whitneyx.info/book-dayof-90.html</loc>
+    <priority>0.64</priority>
+  </url>
 </urlset>
