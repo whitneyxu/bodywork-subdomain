@@ -1,1 +1,3 @@
 Sitemap: https://bodywork.whitneyx.info/sitemap.xml
+User-agent: *
+Disallow:
