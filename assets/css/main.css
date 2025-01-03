@@ -4304,6 +4304,20 @@ button{
 }
 button:hover {
     background-color: #45a049;
+
+    
+}
+.hidden-links {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px); /* For older browsers */
+    clip-path: inset(50%);          /* Modern browsers */
+    white-space: nowrap;
+    border: 0;
 }
 
 /*collapsible button end*/
