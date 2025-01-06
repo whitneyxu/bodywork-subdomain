@@ -4305,7 +4305,7 @@ button{
 button:hover {
     background-color: #45a049;
 
-    
+
 }
 .hidden-links {
     position: absolute;
@@ -4319,6 +4319,59 @@ button:hover {
     white-space: nowrap;
     border: 0;
 }
+
+welcome {
+  display: block; /* Ensures <welcome> behaves like a block element */
+  max-width: 100%; /* Default full width for mobile */
+  margin: 0 auto; /* Centers the container */
+  padding: 1rem; /* Adds some padding for readability */
+  text-align: center;
+}
+
+
+.responsive-img {
+  width: 100%; /* Full width on mobile */
+  max-width: 1000px; /* Restrict to original image width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media (min-width: 768px) {
+  welcome {
+    max-width: 600px; /* Narrower width for desktop and larger screens */
+  }
+
+  .responsive-img {
+    width: 60%; /* Reduce size on larger screens */
+  }
+}
+
+/* General rule for all responsive maps */
+img[usemap] {
+  border: none;
+  height: auto;
+  max-width: 100%; /* Ensure full width on small screens */
+  width: auto;
+}
+
+/* Ensure .responsive-img takes precedence */
+section img.responsive-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px; /* Restrict maximum size for desktop */
+  width: 100%; /* Full width for smaller screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  section img.responsive-img {
+    width: 60%; /* Resize to 60% of its container on desktop */
+    max-width: 600px; /* Cap width for larger screens */
+  }
+}
+
 
 /*collapsible button end*/
 
