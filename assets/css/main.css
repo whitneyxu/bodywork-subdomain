@@ -4392,6 +4392,19 @@ section img.responsive-img {
     }
 }
 
+.service-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #BEE5FA !important;
+}
+
+.service-price {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 300;
+}
+
 
 /*collapsible button end*/
 
