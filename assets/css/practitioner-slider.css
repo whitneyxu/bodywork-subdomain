@@ -1,0 +1,175 @@
+/* Practitioner Selector Styles */
+.practitioner-selector {
+    padding: 2em 5em;
+    text-align: center;
+    margin-bottom: 0;
+    background: transparent;
+    border: none;
+}
+
+.practitioner-selector h2 {
+    margin-bottom: 1em;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+.slider-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.slider-track {
+    position: relative;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.slider-button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    transition:
+        color 0.3s,
+        background-color 0.3s;
+}
+
+/* Custom hover color for slider buttons only */
+.slider-button:hover {
+    background-color: #ffa5fe !important;
+}
+
+.slider-button.active {
+    color: #40235c;
+}
+
+.slider-indicator {
+    position: absolute;
+    height: 50px;
+    width: 50%;
+    background-color: #4aa6e0;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+/* Content Sections */
+.practitioner-content section.main {
+    padding: 5em 5em 3em 5em;
+}
+
+/* Make sure Whitney's content appears by default */
+#whitney-content {
+    display: block;
+}
+
+/* Hide Leyla's content by default */
+#leyla-content {
+    display: none;
+}
+
+/* Ensure consistent styling with the original */
+#whitney-content .table-wrapper,
+#leyla-content .table-wrapper {
+    margin: 0 0 2em 0;
+}
+
+/* Keep original padding and margin for inner content */
+.practitioner-content section.main > * {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Prevent nested sections from doubling up padding */
+.practitioner-content section.main section.main {
+    padding: 0;
+    border-top: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1280px) {
+    .practitioner-selector {
+        padding: 2em 4em;
+    }
+
+    .practitioner-content section.main {
+        padding: 4em 4em 2em 4em;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .practitioner-selector {
+        padding: 2em 3em;
+    }
+
+    .practitioner-content section.main {
+        padding: 4em 3em 2em 3em;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .practitioner-selector {
+        padding: 1.5em 2em;
+    }
+
+    .slider-container {
+        max-width: 300px;
+    }
+
+    .practitioner-content section.main {
+        padding: 3em 2em 1em 2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .practitioner-selector {
+        padding: 1.5em 1.5em;
+    }
+
+    .practitioner-content section.main {
+        padding: 3em 1.5em 1em 1.5em;
+    }
+}
+/* Override the active and hover state background colors for slider buttons */
+.slider-button.active {
+    color: #40235c;
+    background-color: #fbc8ff !important;
+}
+
+.slider-button:hover {
+    background-color: #ffa5fe !important;
+}
+
+/* Additional specificity for the active class */
+.slider-track .active,
+.slider-track .slider-button.active {
+    background-color: #fbc8ff !important;
+}
+/* Profile photo styling */
+.practitioner-profile {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.profile-photo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #40235c; /* Dark purple border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.practitioner-profile h2 {
+    margin-top: 0.75em;
+    font-size: 1.5em;
+}
