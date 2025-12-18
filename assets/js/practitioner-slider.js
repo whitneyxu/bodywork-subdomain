@@ -41,9 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
     showWhitney();
   } else if (savedPreference === "leyla") {
     showLeyla();
-  } else {
-    // Default to Whitney if no preference
+  } else if (savedPreference === "whitney") {
     showWhitney();
+  } else {
+    // Default to Leyla if no preference
+    showLeyla();
   }
 
   // Add click handlers
