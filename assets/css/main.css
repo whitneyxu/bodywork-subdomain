@@ -2870,6 +2870,10 @@ header.major h2:after {
     overflow-x: auto;
 }
 
+table.integrative-explainer {
+    margin-bottom: 0;
+}
+
 table {
     margin: 0 0 2em 0;
     width: 100%;
