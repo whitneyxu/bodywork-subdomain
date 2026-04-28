@@ -30,6 +30,20 @@ If git pull gives an error about `.DS_Store`, run this instead:
 git checkout -- .DS_Store && git pull
 ```
 
+## Machine setup (Whitney's MacBook Pro)
+
+This section applies specifically to **Whitney's MacBook Pro**. On a different machine, this setup won't exist and will need to be done separately.
+
+This Mac has Homebrew and the GitHub CLI (`gh`) installed and authenticated as `whitneyxu`. Git push works via `gh`'s credential helper.
+
+If `git push` ever fails with an authentication error, run this first to re-link git with GitHub:
+
+```
+/opt/homebrew/bin/gh auth setup-git
+```
+
+Then try `git push` again. If `gh` itself is not found, it lives at `/opt/homebrew/bin/gh`.
+
 ## End of every session: push your changes
 
 After making changes, save them to GitHub in three steps:
