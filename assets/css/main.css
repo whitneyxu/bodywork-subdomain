@@ -4528,3 +4528,222 @@ section img.responsive-img {
     font-size: 17px;
     font-weight: 300;
 }
+
+/* ---- Glossary terms (gua sha, etc.) ---- */
+
+/* The clickable term inside a paragraph */
+.glossary-term {
+	border-bottom: 1px dotted #d9a8c0;
+	color: inherit;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.glossary-term:hover,
+.glossary-term:focus {
+	border-bottom-color: #b76c8c;
+	color: #d9a8c0;
+}
+
+.glossary-term .icon {
+	color: #b76c8c;
+	font-size: 0.85em;
+	margin-left: 0.35em;
+	vertical-align: baseline;
+}
+
+/* ---- Glossary pop-up ---- */
+
+.glossary-modal {
+	align-items: center;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	padding: 1.5em;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 10000;
+}
+
+/* Needed because display:flex above would otherwise beat the hidden attribute */
+.glossary-modal[hidden] {
+	display: none;
+}
+
+.glossary-modal-backdrop {
+	background: rgba(10, 5, 15, 0.75);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.glossary-modal-dialog {
+	-webkit-overflow-scrolling: touch;
+	background-color: #2a1f2e;
+	border-radius: 8px;
+	border-top: 4px solid #b76c8c;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+	max-height: 85vh;
+	max-width: 620px;
+	overflow-y: auto;
+	padding: 2em 2.2em;
+	position: relative;
+	width: 100%;
+}
+
+.glossary-modal-dialog h3 {
+	color: #d9a8c0;
+	margin-bottom: 0.8em;
+	padding-right: 1.5em;
+}
+
+/* The site styles bare <button> elements as blue pills, so this needs to be
+   specific enough to win outright. */
+.glossary-modal .glossary-modal-close {
+	align-items: center;
+	background: none;
+	border: 0;
+	border-radius: 50%;
+	box-shadow: none;
+	color: #d9a8c0;
+	cursor: pointer;
+	display: flex;
+	font-size: 1.6em;
+	font-weight: 400;
+	height: 1.6em;
+	justify-content: center;
+	line-height: 1;
+	margin: 0;
+	min-width: 0;
+	padding: 0;
+	position: absolute;
+	right: 0.4em;
+	top: 0.4em;
+	width: 1.6em;
+}
+
+.glossary-modal .glossary-modal-close:focus-visible {
+	outline: 2px solid #d9a8c0;
+	outline-offset: 2px;
+}
+
+/* Don't show the ring for plain mouse clicks */
+.glossary-modal .glossary-modal-close:focus:not(:focus-visible) {
+	outline: none;
+}
+
+.glossary-modal .glossary-modal-close:hover {
+	background: rgba(183, 108, 140, 0.25);
+	color: #ffffff;
+}
+
+.glossary-modal-body {
+	font-size: 0.92em;
+}
+
+.glossary-modal-body h4 {
+	color: #d9a8c0;
+	font-size: 1em;
+	margin-bottom: 0.4em;
+}
+
+.glossary-modal-body ul {
+	list-style: disc;
+	margin-bottom: 1em;
+	padding-left: 1.5em;
+}
+
+.glossary-modal-body li {
+	padding-left: 0.3em;
+}
+
+.glossary-modal-body > :last-child {
+	margin-bottom: 0;
+}
+
+/* Stop the page behind the pop-up from scrolling */
+body.glossary-modal-open {
+	overflow: hidden;
+}
+
+@media screen and (max-width: 736px) {
+	.glossary-modal {
+		padding: 1em;
+	}
+
+	.glossary-modal-dialog {
+		max-height: 88vh;
+		padding: 1.6em 1.4em;
+	}
+}
+
+/* ---- Collapsible FAQ entries ---- */
+
+details.faq {
+	border-bottom: 1px solid rgba(183, 108, 140, 0.25);
+}
+
+details.faq:first-of-type {
+	border-top: 1px solid rgba(183, 108, 140, 0.25);
+}
+
+details.faq > summary {
+	cursor: pointer;
+	list-style: none;
+	padding: 1em 2.2em 1em 0;
+	position: relative;
+	transition: color 0.2s ease-in-out;
+}
+
+/* Hide the default disclosure triangle so we can use our own */
+details.faq > summary::-webkit-details-marker {
+	display: none;
+}
+
+/* Keep the h2 for SEO, but let it sit inline inside the clickable row */
+details.faq > summary h2 {
+	display: inline;
+	font-size: 1.1em;
+	margin: 0;
+}
+
+details.faq > summary:hover h2 {
+	color: #d9a8c0;
+}
+
+details.faq > summary::after {
+	content: '\23F7';
+	color: #b76c8c;
+	position: absolute;
+	right: 0.4em;
+	top: 1em;
+	transition: transform 0.2s ease-in-out;
+}
+
+details.faq[open] > summary::after {
+	content: '\23F6';
+}
+
+.faq-body {
+	padding: 0 0 1.5em 0;
+}
+
+/* Contain the floated images inside the answers */
+.faq-body::after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.faq-body > :last-child {
+	margin-bottom: 0;
+}
+
+/* Highlight an answer opened via a link from another page */
+details.faq.faq-flash {
+	animation: glossary-flash 1.2s ease-out;
+}
