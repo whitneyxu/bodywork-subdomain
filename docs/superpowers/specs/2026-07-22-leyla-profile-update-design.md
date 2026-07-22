@@ -27,10 +27,12 @@ Gua sha appears nowhere on the site today. Her new copy introduces it in several
 Source is 1238x1004. Two derived files:
 
 - `images/leyla-flowers.jpg` — full frame, for the bio on `about-me.html`
-- `images/leyla-flowers-square.jpg` — 700x700 crop at offset (40, 272), for the 220px
+- `images/leyla-flowers-square.jpg` — 700x700 crop at offset (180, 272), for the 220px
   circular profile photo on `book.html`. Cropped in ~30% from centre so the face reads
   at avatar size rather than sitting small in a wide field of flowers, with the crop
-  window raised so her head sits centred in the circle rather than near the top.
+  window set so her head sits high in the circle. Note this is close to the limit: the
+  top of her headscarf sits right at the circle's edge, so the offset should not be
+  raised further without re-checking the rendered circle.
 
 The previous `leyla-portrait-small.jpg` and `leyla-square-small.jpg` stay on disk but
 become unreferenced. The repo already retains superseded images this way (`*-old.jpg`).
@@ -51,7 +53,7 @@ style used in Whitney's section.
 | 60 min bodywork session | $90–$150 | `book-leyla-massage-60.html` | exists |
 | 90 min bodywork session | $120–$190 | `book-leyla-massage-90.html` | exists |
 | 120 min bodywork session | $170–$250 | `book-leyla-massage-120.html` | exists |
-| 30 min cupping + (feet/hands/skull) | $35–$50 | `book-leyla-cupping-30.html` | **NEEDED** |
+| 30 min cupping + (feet/hands/skull) | $35–$50 | `book-leyla-cupping-30.html` | exists |
 | 30 min assisted stretching | $35–$55 | `book-leyla-stretch-30.html` | exists |
 | 60 min assisted stretching | $60–$110 | `book-leyla-stretch-60.html` | exists |
 
@@ -59,7 +61,7 @@ style used in Whitney's section.
 
 | Service | Price | Booking page | TidyCal |
 |---|---|---|---|
-| 60 min arms and hands | $150 fixed | `book-leyla-armshands-60.html` | **NEEDED** |
+| 60 min arms and hands | $150 fixed | `book-leyla-armshands-60.html` | exists |
 | foot and calf massage | ask | none, email to book | n/a |
 
 Booking page filenames are left unchanged even though the copy now says "bodywork
@@ -127,13 +129,19 @@ her alone. Left alone as out of scope.
 of the existing booking pages, with a clearly marked placeholder where the TidyCal URL
 goes.
 
-Both services are already being offered, so rather than a disabled button they get an
-"email to book" button (`mailto:` with a pre-filled subject line naming the service) and
-a line explaining that only the online booking is pending. The foot and calf massage,
-originally listed "coming soon", gets the same treatment.
+Leyla supplied both TidyCal paths, so these are now live booking pages using the same
+iframe pattern as the existing ones:
 
-The two placeholder pages stay in the repo unlinked, ready for when the TidyCal links
-exist.
+- cupping: `gentletigerbodywork/30-min-cupping-skull-hands-feet`
+- arms and hands: `gentletigerbodywork/60-minute-arms-and-hands-with-leyla`
+
+Leyla sent these as TidyCal's `<div class="tidycal-embed">` script snippets. They were
+converted to the `<iframe src="https://tidycal.com/...">` form the other six booking
+pages already use, rather than introducing a second embedding style across the set.
+
+Foot and calf massage has no TidyCal event yet, so it keeps an "email to book" button
+(`mailto:` with a pre-filled subject naming the service) and a line explaining that the
+session is available and only the online booking is pending.
 
 ## Out of scope
 
@@ -146,11 +154,11 @@ exist.
 
 ## Follow-up for Leyla (not committed)
 
-Create in TidyCal:
-- 30 min cupping + (feet/hands/skull), $35–$50
-- 60 min arms and hands, fixed $150
+All eight TidyCal links are wired except foot and calf massage, which has no event yet
+and books by email in the meantime.
 
-Verify prices on the six existing TidyCal event types match the new ranges above.
+Still worth verifying that prices on the TidyCal event types match the ranges above —
+several changed in this update, and TidyCal holds its own copy of them.
 
 ## Verification
 
